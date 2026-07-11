@@ -1,7 +1,3 @@
-# Starter pipeline
-# Start with a minimal pipeline that you can customize to build and deploy your code.
-# Add steps that build, run tests, deploy, and more:
-# https://aka.ms/yaml
 
 trigger:
 - main
@@ -11,15 +7,20 @@ pool:
 
 steps:
   - checkout: self
-    submodules: true # Required so Git pulls your loficode theme!
+    submodules: true
+  - script:
+      curl -L -o hugo.deb https://github.com/gohugoio/hugo/releases/download/v0.164.0/hugo_extended_0.164.0_linux-amd64.deb
+      sudo dpkg -i hugo.deb
+      hugo --minify
+    displayName: 'Build site with native Hugo'
+
 
   - task: AzureStaticWebApp@0
     inputs:
       app_location: '/' 
-      output_location: 'public' # Hugo's default output folder
+      output_location: 'public'
+      skip_app_build: true
       azure_static_web_apps_api_token: $(deployment_token)
-    env:
-      HUGO_VERSION: '0.148.2'
 
 
 

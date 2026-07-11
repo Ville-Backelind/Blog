@@ -18,5 +18,8 @@ steps:
       app_location: '/' 
       output_location: 'public' # Hugo's default output folder
       azure_static_web_apps_api_token: $(deployment_token)
+    env:
+      HUGO_VERSION: '0.148.2'
+
 
 

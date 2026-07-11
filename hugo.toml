@@ -1,4 +1,4 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://blog.zorkenindustries.com/'
 locale = 'en-us'
 title = "l4z0rMull33t's Blog of Awesome Stuff"
 theme = "loficode"

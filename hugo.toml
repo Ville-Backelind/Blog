@@ -1,0 +1,39 @@
+baseURL = 'https://example.org/'
+locale = 'en-us'
+title = "l4z0rMull33t's Blog of Awesome Stuff"
+theme = "loficode"
+
+[params]
+  description = "A cozy place to document projects that interests me."
+
+  [params.author]
+    name = "l4z0rMull33t"
+    image = "images/l4z0rmull33t.jpg"
+
+  # Profile section
+  [params.profile]
+    name = "l4z0rMull33t"
+    tagline = "For fun and for Awesome"
+    photo = "/images/l4z0rmull33t.jpg"
+
+  # Social links - Supported platforms: github, twitter, linkedin, email, mastodon, youtube, instagram, facebook
+  [params.social]
+    github = "https://github.com/Ville-Backelind"
+    # twitter = "madebydia"
+    linkedin = "https://www.linkedin.com/in/axz5exitb25wehj5dmfx/"
+    # email = "your-email@example.com"
+    # mastodon = "https://mastodon.social/@yourusername"
+    # youtube = "https://youtube.com/@yourusername"
+    # instagram = "your-instagram-username"
+    # facebook = "your-facebook-username"
+
+# Navigation menu
+[[menu.main]]
+  name = "About"
+  url = "/about/"
+  weight = 10
+
+[[menu.main]]
+  name = "Contact"
+  url = "/contact/"
+  weight = 20

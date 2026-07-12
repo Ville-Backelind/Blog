@@ -8,13 +8,14 @@ theme = "loficode"
 
   [params.author]
     name = "l4z0rMull33t"
-    image = "./Images/l4z0rmull33t.jpg"
+    image = "/Images/l4z0rmull33t.jpg"
+    favicon = "/Images/favicon.png"
 
   # Profile section
   [params.profile]
     name = "l4z0rMull33t"
     tagline = "For fun and for Awesome"
-    photo = "./Images/l4z0rmull33t.jpg"
+    photo = "/Images/l4z0rmull33t.jpg"
 
   # Social links - Supported platforms: github, twitter, linkedin, email, mastodon, youtube, instagram, facebook
   [params.social]

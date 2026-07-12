@@ -4,7 +4,7 @@ draft = false
 title = 'First'
 +++
 ---
-Title: First post
+First post
 ---
 Building this blog will is a project in it self. Because I would like to learn about Azure DevOps so i will build this with Azure Static Web Apps, Azure DevOps, Git/GitHub, and Hugo.
 

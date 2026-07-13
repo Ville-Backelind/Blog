@@ -22,11 +22,11 @@ Theme, amazing as it is, didn't really have favicons. In order to implement my o
 ```HTML
 <link rel="icon" type="image/png" href="/Images/favicon.png">
 ```
-That way Hugo will prioritize my header file rather than the one in `themes/loficode/layouts/paritals`.
-There is just one problem. If the creator of the theme updates this file it could break the site, or the build process. Since Azure DevOps will pull the theme straight from the creator's GitHub when automatically building the site, the pipeline will always fetch the latest version of the theme. Because Hugo prioritzes my header file it will not get any updates automatically.
+That way Hugo will prioritize my header file rather than the one in `themes/loficode/layouts/partials`.
+There is just one problem. If the creator of the theme updates this file it could break the site, or the build process. Since Azure DevOps will pull the theme straight from the creator's GitHub when automatically building the site, the pipeline will always fetch the latest version of the theme. Because Hugo prioritizes my header file it will not get any updates automatically.
 
 ## Getting the YAML Pipeline to work
-There was some issues with getting it to build and deploy as it should.
+There were some other small issues with getting it to build and deploy as it should.
 Firstly Microsoft Oryx didn't want to build with the latest version of `Hugo v0.164.0`. So I tried to specify a version that Microsoft Oryx likes to work with, `Hugo v0.148.2`. dashed line
 However, now the theme didn't want to work with this older version of Hugo. 
 The solution was to write a small script that installs `Hugo v0.164.0` directly on to the pipeline agent, and compiles the HTML. Then the Azure task will just have to function as an uploader. 

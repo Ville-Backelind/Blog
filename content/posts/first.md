@@ -25,4 +25,31 @@ Theme, amazing as it is, didn't really have favicons. In order to implement my o
 That way Hugo will prioritize my header file rather than the one in `themes/loficode/layouts/paritals`.
 There is just one problem. If the creator of the theme updates this file it could break the site, or the build process. Since Azure DevOps will pull the theme straight from the creator's GitHub when automatically building the site, the pipeline will always fetch the latest version of the theme. Because Hugo prioritzes my header file it will not get any updates automatically.
 
-more to come... 
+## Getting the YAML Pipeline to work
+There was some issues with getting it to build and deploy as it should.
+Firstly Microsoft Oryx didn't want to build with the latest version of `Hugo v0.164.0`. So I tried to specify a version that Microsoft Oryx likes to work with, `Hugo v0.148.2`. 
+However, now the theme didn't want to work with this older version of Hugo. 
+The solution was to write a small script that installs `Hugo v0.164.0` directly on to the pipeline agent, and compiles the HTML. Then the Azure task will just have to function as an uploader. 
+```YAML
+steps:
+  - checkout: self
+    submodules: true
+
+  # Downloads hugo v0.164.0, installs it, and compiles the HTML natively
+  - script: |
+      curl -L -o hugo.deb https://github.com/gohugoio/hugo/releases/download/v0.164.0/hugo_extended_0.164.0_linux-amd64.deb
+      sudo dpkg -i hugo.deb
+      hugo --minify
+
+
+  # Upload the pre-built public folder
+  - task: AzureStaticWebApp@0
+    inputs:
+      app_location: '/' 
+      output_location: 'public'
+      skip_app_build: true # tells Oryx to step back and just upload. 
+      azure_static_web_apps_api_token: $(deployment_token)
+```
+
+There were some small issues here and there but nothing very interesting to go through here.
+

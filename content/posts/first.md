@@ -27,7 +27,7 @@ There is just one problem. If the creator of the theme updates this file it coul
 
 ## Getting the YAML Pipeline to work
 There was some issues with getting it to build and deploy as it should.
-Firstly Microsoft Oryx didn't want to build with the latest version of `Hugo v0.164.0`. So I tried to specify a version that Microsoft Oryx likes to work with, `Hugo v0.148.2`. 
+Firstly Microsoft Oryx didn't want to build with the latest version of `Hugo v0.164.0`. So I tried to specify a version that Microsoft Oryx likes to work with, `Hugo v0.148.2`. dashed line
 However, now the theme didn't want to work with this older version of Hugo. 
 The solution was to write a small script that installs `Hugo v0.164.0` directly on to the pipeline agent, and compiles the HTML. Then the Azure task will just have to function as an uploader. 
 ```YAML
@@ -47,9 +47,18 @@ steps:
     inputs:
       app_location: '/' 
       output_location: 'public'
-      skip_app_build: true # tells Oryx to step back and just upload. 
+      skip_app_build: true # tells Oryx to step back and to just upload. 
       azure_static_web_apps_api_token: $(deployment_token)
 ```
 
-There were some small issues here and there but nothing very interesting to go through here.
+## Diagram of what we've accomplished
 
+![Blog CI/CD Pipeline](/Images/blogCICD.svg)
+
+With this CI/CD pipeline, I can easily create a new post using the Hugo CLI:
+```powershell
+hugo new content content/posts/new-post.md
+```
+I can spin up the site locally with the built-in Hugo server and see the site update as I save my changes to the post.
+When I'm happy with the content, I just change `draft = true` to `draft = false` in the TOML front matter, save the changes, commit the files, and push to GitHub. Azure Pipelines then automatically builds and deploys the site to SWA. 
+On top of everything, SWA handles the SSL certificate for the site, so I don't have to bother with that. A win in and of itself.

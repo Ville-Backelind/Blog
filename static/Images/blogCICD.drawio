@@ -1,0 +1,104 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36">
+  <diagram name="Page-1" id="evbGPxyGkeiPqv7TNb4d">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="XnEJ_tcE7GjiaSfilE6u-1" parent="1" style="image;points=[];aspect=fixed;html=1;align=center;shadow=0;dashed=0;image=img/lib/allied_telesis/computer_and_terminals/Personal_Computer.svg;" value="" vertex="1">
+          <mxGeometry height="60" width="50" x="40" y="525" as="geometry" />
+        </mxCell>
+        <mxCell id="XnEJ_tcE7GjiaSfilE6u-52" edge="1" parent="1" source="XnEJ_tcE7GjiaSfilE6u-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="550" y="560" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XnEJ_tcE7GjiaSfilE6u-3" parent="1" style="dashed=0;outlineConnect=0;html=1;align=center;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;shape=mxgraph.weblogos.github" value="" vertex="1">
+          <mxGeometry height="80" width="80" x="230" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="XnEJ_tcE7GjiaSfilE6u-5" edge="1" parent="1" source="XnEJ_tcE7GjiaSfilE6u-1" style="endArrow=classic;html=1;rounded=0;exitX=0.965;exitY=0.534;exitDx=0;exitDy=0;exitPerimeter=0;" target="XnEJ_tcE7GjiaSfilE6u-3" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points" />
+            <mxPoint x="100" y="560" as="sourcePoint" />
+            <mxPoint x="220" y="560" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XnEJ_tcE7GjiaSfilE6u-16" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Webhook: Push Event" vertex="1">
+          <mxGeometry height="30" width="180" x="320" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="XnEJ_tcE7GjiaSfilE6u-19" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="My Computer" vertex="1">
+          <mxGeometry height="30" width="60" x="30" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="XnEJ_tcE7GjiaSfilE6u-53" edge="1" parent="1" source="XnEJ_tcE7GjiaSfilE6u-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="860" y="560" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XnEJ_tcE7GjiaSfilE6u-20" parent="1" style="image;sketch=0;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/mscae/Azure_Pipelines.svg;" value="" vertex="1">
+          <mxGeometry height="70" width="70" x="555" y="525" as="geometry" />
+        </mxCell>
+        <mxCell id="XnEJ_tcE7GjiaSfilE6u-24" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Azure Pipelines (Azure DevOps)" vertex="1">
+          <mxGeometry height="30" width="180" x="500" y="590" as="geometry" />
+        </mxCell>
+        <mxCell id="XnEJ_tcE7GjiaSfilE6u-28" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Azure Build Agent" vertex="1">
+          <mxGeometry height="30" width="60" x="860" y="590" as="geometry" />
+        </mxCell>
+        <mxCell id="XnEJ_tcE7GjiaSfilE6u-30" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Agent:&amp;nbsp;&lt;br&gt;Git Clone source code and theme" vertex="1">
+          <mxGeometry height="30" width="260" x="460" y="670" as="geometry" />
+        </mxCell>
+        <mxCell id="XnEJ_tcE7GjiaSfilE6u-36" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Push to Main" vertex="1">
+          <mxGeometry height="30" width="80" x="120" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="XnEJ_tcE7GjiaSfilE6u-38" parent="1" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/preview/Static_Apps.svg;" value="" vertex="1">
+          <mxGeometry height="50" width="70" x="1280" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="XnEJ_tcE7GjiaSfilE6u-39" parent="1" style="verticalLabelPosition=bottom;html=1;verticalAlign=top;align=center;strokeColor=none;fillColor=#00BEF2;shape=mxgraph.azure.cloud_service;" value="" vertex="1">
+          <mxGeometry height="90" width="100" x="870" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="XnEJ_tcE7GjiaSfilE6u-40" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Agent Curls GitHub for the Hugo.deb package" vertex="1">
+          <mxGeometry height="30" width="380" x="390" y="720" as="geometry" />
+        </mxCell>
+        <mxCell id="XnEJ_tcE7GjiaSfilE6u-41" parent="1" style="shape=ext;double=1;rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="120" width="190" x="960" y="490" as="geometry" />
+        </mxCell>
+        <mxCell id="XnEJ_tcE7GjiaSfilE6u-42" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Agent:&lt;br&gt;Installs the hugo.deb package&lt;br&gt;Runs Hugo with --minify flag&lt;br&gt;Uses hugo to build the site from the source code and theme." vertex="1">
+          <mxGeometry height="110" width="170" x="970" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="XnEJ_tcE7GjiaSfilE6u-44" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Provisions a build agent" vertex="1">
+          <mxGeometry height="30" width="140" x="670" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="XnEJ_tcE7GjiaSfilE6u-46" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.667;entryDx=0;entryDy=0;entryPerimeter=0;" target="XnEJ_tcE7GjiaSfilE6u-38">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1150" y="554" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XnEJ_tcE7GjiaSfilE6u-47" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Deploys to SWA" vertex="1">
+          <mxGeometry height="30" width="100" x="1160" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="XnEJ_tcE7GjiaSfilE6u-48" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Azure Static Web Apps" vertex="1">
+          <mxGeometry height="40" width="110" x="1260" y="570" as="geometry" />
+        </mxCell>
+        <mxCell id="XnEJ_tcE7GjiaSfilE6u-50" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;rounded=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;" target="XnEJ_tcE7GjiaSfilE6u-28" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="260" y="670" />
+              <mxPoint x="920" y="670" />
+            </Array>
+            <mxPoint x="260" y="604" as="sourcePoint" />
+            <mxPoint x="930" y="600" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XnEJ_tcE7GjiaSfilE6u-51" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="260" y="660" />
+              <mxPoint x="260" y="720" />
+              <mxPoint x="920" y="710" />
+            </Array>
+            <mxPoint x="260" y="610" as="sourcePoint" />
+            <mxPoint x="920" y="603.9" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
